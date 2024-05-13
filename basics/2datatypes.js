@@ -21,4 +21,4 @@ let isloggedin = false
  
 
 console.log(typeof age);//undefined
-console.log(typeof null);// gives object
+console.log(typeof null);// gives output as object
