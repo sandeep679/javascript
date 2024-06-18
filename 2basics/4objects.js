@@ -60,11 +60,27 @@ const user =[{
 
 //console.log(user[1].email);
 
-console.log(tinderuser);
+// console.log(tinderuser);
 
-console.log(Object.keys(tinderuser));
-console.log(Object.values(tinderuser));
-console.log(Object.entries(tinderuser));
+// console.log(Object.keys(tinderuser));
+// console.log(Object.values(tinderuser));
+// console.log(Object.entries(tinderuser));
 
-console.log(tinderuser.hasOwnProperty("logged"));
+// console.log(tinderuser.hasOwnProperty("logged"));
+
+//             object destrucing
+
+const course ={
+  coursename :"js in hindi",
+  price :"999",
+  courseinstructor :"samay"
+
+}
+
+const {courseinstructor} =course // object destructing
+console.log(courseinstructor);   
+
+const {courseinstructor:instructor} =course    // object destructing second ways
+console.log(instructor);
+
 
