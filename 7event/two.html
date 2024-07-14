@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Async code</h1>
+    <button id="stop">STOP</button>
+</body>
+<script>
+
+//  setTimeout(function(){      //  2 sec ke baad log kra dega
+//     console.log("SAMAY ");  // 1 approach
+//  },2000)
+
+
+
+// const sayname = function(){
+//     console.log("SAMAY");           // 2nd approach
+// }
+// setTimeout(sayname,4000)
+
+
+
+
+ const changetext =function(){
+    document.querySelector('h1').innerHTML="RAHUL"
+}
+
+const changeme =setTimeout(changetext,4000)
+  //clearTimeout(changeme)           // it clear timeout
+
+
+document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(changeme)
+    console.log("STOPPED");
+})
+
+</script>
+</html>
