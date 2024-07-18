@@ -14,7 +14,7 @@ let heroPower ={                   // object
 }
 
 
-Object.prototype.Samay = function(){                 //create of   function in prototype
+Object.prototype.Samay = function(){                 //create of   object in prototype
     console.log(`Samay presnt in all objects`);
 }
 Array.prototype.heySamay =function(){             //create array in prototype
@@ -22,9 +22,9 @@ Array.prototype.heySamay =function(){             //create array in prototype
 }
 
 
-//heroPower.Samay()         // we access higher hiearchy in js 
+//heroPower.Samay()         // we access higher hiearchy in js because it create in objects
 myheros.Samay()                // it access object prototype because object is high hiearchy
-// myheros.heySamay()           // it have access to array  because it decalre in  array 
+// myheros.heySamay()           // it have access to array  because it decalre in  array it is not high in hiearchy
 //heroPower.heySamay()         // it is not accessible because it declare in low hiearchy
 
 
@@ -59,7 +59,7 @@ teacher.__proto__ =user         // this is old acessing method
 
 
 
-
+ 
  let username ="SAMAY      "
  String.prototype.trueLength=function(){
     console.log(`${this}`);
