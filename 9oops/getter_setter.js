@@ -9,7 +9,7 @@ class User {
     }
     set email(value){
         this._email = value
-    }
+    }                                       // _ is used to private properties
 
     get password(){
         return `${this._password}hitesh`
