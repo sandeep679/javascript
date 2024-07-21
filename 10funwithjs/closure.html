@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope</title>
+</head>
+<body>
+    <button id="orange"> orange</button>
+    <button id="green">green</button>
+  
+</body>
+<script>
+  //  function init() {                   // lexical scope 
+  //       let name = "Mozilla"; 
+  //       function displayName() {
+  //           console.log(name); 
+  //       }
+  //       displayName();
+  //   }
+  //   init();
+
+  //   function outer(){
+  //       let username = "hitesh"
+  //       console.log("OUTER", secret);         // isme scope ke bare m define kiya ha . parent function cannot acces variable to his child variable but child can access parent variable. sibling also dont share variable too 
+  //       function inner(){
+  //           let secret = "my123"
+  //           console.log("inner", username);
+  //       }
+  //       function innerTwo(){
+  //           console.log("innerTwo", username);
+  //           console.log(secret);
+  //       }
+  //       inner()
+  //       innerTwo()
+
+  //   }
+  //   outer()
+  //   console.log("TOO OUTER", username);
+                  
+                  
+                  //Closure scope
+  
+  
+  
+  
+//   function makeFunc() {
+//   const name = "Mozilla";
+//   function displayName() {   //isme displayname akele nhi jayega agar uska outer function exist krta hai uska bhi scope jayega  and isme memory sharing hoti hai 
+//                                 // lexical scope return hota hai
+//     console.log(name);
+//   }
+//   return displayName;// in this function ka reference pass kr diya as return  
+// }
+
+// const myFunc = makeFunc();
+// myFunc();
+
+</script>
+
+
+<script>
+
+  //real time of scope
+// document.getElementById("orange").onclick = function(){
+//             document.body.style.backgroundColor = `orange`
+//         }
+//         document.getElementById("green").onclick = function(){
+//             document.body.style.backgroundColor = `green`
+//          }
+
+function clickHandler(color){
+            // document.body.style.backgroundColor = `${color}`
+
+            return function(){
+                document.body.style.backgroundColor = `${color}` // isme lexical scope pass hua hai
+            }
+        }
+
+        document.getElementById('orange').onclick = clickHandler("orange")
+        document.getElementById('green').onclick = clickHandler("green")
+</script>
+</html>
