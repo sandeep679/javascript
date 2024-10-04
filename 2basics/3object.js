@@ -13,8 +13,9 @@ const user ={
     email:"yoyo@gmail.com",
     loggedin:false,
     lastlogin: ["monday","saturday"]
+    "location name": "delhi",
 }
-
+// console.log(user["location name"]);           hum isko isse tarah access kar payega jinke bich m space hota hai
 // console.log(user.email);
 // console.log(user["email"]);
 // console.log(user[mysym]);
