@@ -13,7 +13,7 @@ const user ={
 //console.log(this); // it show empty in node but it show window in browser because window is global
 
 // function chai(){
-//     let username ="samay"
+//     let username ="samay"     // it show undefined because this is working on object in the context
 //     console.log(this.username);
 // }
 // chai()
