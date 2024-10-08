@@ -1,1 +1,6 @@
-regex
+1   regex
+
+2   hoisting
+3   error
+4   modules
+5  debugging
